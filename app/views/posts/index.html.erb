@@ -1,0 +1,13 @@
+<h1>POSTS</h1>
+<div class = "post-container"> 
+    <% @posts.each do |post| %>
+        <div class = "post">
+        <%= link_to post do %>
+            <h3><%= post.title %></h3>
+         <% end %>
+            <p><%= post.category.name %></p>
+            <p><%= post.created_at %></p>
+            <p><%= post.text %></p>
+        </div>
+    <% end %>
+ </div>

@@ -1,0 +1,9 @@
+
+<h3><%= @post.title %></h3>
+<p><%= @post.category.name %></p>
+<p><%= @post.created_at %></p>
+<p><%= @post.text %></p>
+
+<%= link_to "Back to main", main_path %>
+<%= link_to "Edit", edit_path %>
+<%= button_to "Delete", post_path(@post), method: :delete %>
